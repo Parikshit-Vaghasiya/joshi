@@ -1,0 +1,33 @@
+
+.o_event_full_page_ticket_details {
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-image: url(/uk_joshi/static/src/img/report_full_page_ticket_background.png);
+    padding: 20px 20px 2px 20px !important;
+    background-size: cover;
+    background-position-y: bottom;
+    .flex-column-reverse {
+        background: rgba(13, 20, 41, 0.5);
+        padding-left: 26%;
+        color: white;
+        margin-bottom: 20px;
+    }
+    .o_event_full_page_left_details_top {
+        text-align: center;
+    }
+    .o_event_full_page_ticket_event_name {
+        color:white;
+    }
+    .o_event_full_page_ticket_barcode_container {
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+        padding-right: 8px !important;
+        padding-left: 8px !important;
+    }
+    .o_event_full_page_ticket_type {
+        color:white;
+    }
+    .text-muted {
+        color:white !important;
+    }
+}

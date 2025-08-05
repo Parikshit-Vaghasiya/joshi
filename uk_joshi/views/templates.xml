@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="custom_checkout_skip_address" inherit_id="website_sale.address" priority="20">
+        <xpath expr="//t[@t-set='no_footer']" position="after">
+            <t t-set="only_services" t-value="1"/>
+        </xpath>
+    </template>
+
+    <template id="new_homepage_navratri" inherit_id="website.homepage" customize_show="True">
+        <data inherit_id="website.homepage">
+            <xpath expr="//div[@id='wrap']" position="replace">
+                <t t-call="uk_joshi.home_page_content"/>
+            </xpath>
+        </data>
+    </template>
+
+    <template id="home_page_content" name="Home Page Content">
+        <link href="/uk_joshi/static/src/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="/uk_joshi/static/src/lib/animate/animate.min.css" rel="stylesheet"/>
+        <link href="/uk_joshi/static/src/lib/venobox/venobox.css" rel="stylesheet"/>
+        <link href="/uk_joshi/static/src/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"/>
+        <main id="main">
+            <section id="intro">
+                <div class="intro-container wow fadeIn">
+                    <img class="logo-top" src="/uk_joshi/static/src/img/logo.png" alt="" title="Jay Ambe Maa"/>
+                    <h1 class="mb-4 pb-0 sarathi-present">
+                        <span>SAARTHI</span>
+                        PRESENTS
+                    </h1>
+                    <h1 class="mb-3 pb-0">Happy
+                        <br/>
+                        <span>Navali</span>
+                        Navratri
+                    </h1>
+                    <p class="mb-3 pb-0">4th - 5th &amp; 13 OCT 2024</p>
+                    <p class="mb-3 pb-0">Rugby, United Kingdom</p>
+                    <a href="#about" class="about-btn scrollto">More Info</a>
+                </div>
+                <div id="intro-back"></div>
+            </section>
+            <section id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2>Dearest Garba Mitro,</h2>
+                            <h3>The eagerly awaited time of the year is here once again!</h3>
+                            <p>
+                                We are thrilled to welcome you back for the fourth consecutive year of Navli Navratri
+                                Nights!.
+                                <br/>
+                            </p>
+                            <p>
+                                Over the past three years, your continues support and love have made this festival truly
+                                special, and we can't wait to create more wonderful memories with you.
+                            </p>
+                            <p>
+                                As Navratri approaches, we extend a heartfelt invitation to join us in celebrating,
+                                honoring, and worshiping the Divine Goddess through the
+                                vibrant rhythms of Garba and Dandiya. Let's come together to offer our devotion to Maa Ambe
+                                and make this Navratri unforgettable!
+                            </p>
+                        </div>
+                        <div class="col-lg-3">
+                            <h3>NAVARATRI</h3>
+                            <p>Sports Centre Rugby College, Technology Drive, Rugby, CV21 1AR</p>
+                            <br/>
+                            <p>Friday and Saturday</p>
+                            <p>4th &amp; 5th October 2024</p>
+                            <p>GARBA 6:30 PM - 11:30 PM</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <h3>Dushera Celebration</h3>
+                            <p>Rugby Indian Association, Edward Street, Rugby, CV21 2EZ</p>
+                            <br/>
+                            <p>Sunday</p>
+                            <p>13th OCTOBER 2024</p>
+                            <p>with Fafda Jalebi (Included)</p>
+                            <p>GARBA 5:00 PM - 9:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==========================
+              Speakers Section
+            ============================-->
+            <section id="speakers" class="wow fadeInUp">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Charitable Cause</h2>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>
+                                Please note that this event is organised on a non-profit basis, with all funds collected
+                                directed towards the Saarthi Foundation.
+                            </p>
+                            <p>
+                                The Saarthi Foundation is dedicated to alleviating poverty in specific regions of India. Our
+                                mission extends to assisting underprivileged
+                                individuals in dire financial circumstances, providing them with crucial support for medical,
+                                educational, and living expenses, among other necessities.
+                            </p>
+                            <p>
+                                Furthermore, a portion of the funds raised will be donated to the <a
+                                    href="http://www.guriaindia.org/" target="new">Guria Charitable Foundation
+                            </a> in India.
+                                These funds will be directed towards meeting the needs of children supported by this admirable
+                                charity.
+                            </p>
+                            <p>
+                                Guria is a non-profit organization founded by Mr. Ajeet Singh and Mrs. Manju Singh. Their
+                                organisation is committed to combating child prostitution,
+                                second-generation prostitution, and sex trafficking in Northern India and advocating for freedom
+                                on a global scale.
+                            </p>
+                            <p>For additional details about Guria and its impactful work, please visit
+                                <a href="http://www.guriaindia.org/" target="new">Guria Charitable Foundation</a>
+                            </p>
+                            <p>
+                                If you are interested in making an additional donation or require further information, please
+                                feel free to reach out to <a
+                                    href="https://wa.me/+447838480424?text=I%27m%20interested%20in%20booking%20tickets%20for%20this%20Navratri%20held%20in%20Rugby">
+                                Pallavi Joshi</a>.
+                            </p>
+                            <p>Your generous support will go a long way in making a meaningful difference in the lives of those
+                                in need.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==========================
+              Schedule Section
+            ============================-->
+            <section id="schedule" class="section-with-bg">
+                <div class="container wow fadeInUp">
+                    <div class="section-header">
+                        <h2>Schedule</h2>
+                    </div>
+
+                    <h3 class="sub-heading">Recorded garba will be played from 06:30 PM to 11:30 PM.</h3>
+
+                    <div class="tab-content row justify-content-center">
+
+                        <!-- Schdule Day 1 -->
+                        <div role="tabpanel" class="col-lg-6 tab-pane fade show active" id="day-1">
+
+                            <div class="row schedule-item justify-content-center">
+                                <h2>NAVALI NAVRATRI</h2>
+                            </div>
+
+                            <div class="row schedule-item">
+                                <div class="speaker">
+                                    <img src="/uk_joshi/static/src/img/speakers/1.jpg" alt="Brenden Legros"/>
+                                </div>
+                                <h4>Garba</h4>
+                                <time>06:30 PM</time>
+                            </div>
+
+                            <div class="row schedule-item">
+                                <div class="speaker">
+                                    <img src="/uk_joshi/static/src/img/speakers/2.jpg" alt="Hubert Hirthe"/>
+                                </div>
+                                <h4>Interval &amp; Aarti</h4>
+                                <time>08:30 PM</time>
+                            </div>
+
+                            <div class="row schedule-item">
+                                <div class="speaker">
+                                    <img src="/uk_joshi/static/src/img/speakers/3.jpg" alt="Cole Emmerich"/>
+                                </div>
+                                <h4>Dandiya Raas</h4>
+                                <time>08:45 PM</time>
+                            </div>
+
+                            <div class="row schedule-item">
+                                <div class="speaker">
+                                    <img src="/uk_joshi/static/src/img/speakers/4.jpg" alt="Jack Christiansen"/>
+                                </div>
+                                <h4>Ramjaniyoo &amp; Sanado</h4>
+                                <time>10:00 PM</time>
+                            </div>
+
+                        </div>
+
+                        <div role="tabpanel" class="col-lg-6 tab-pane fade show active" id="day-1">
+
+                            <div class="row schedule-item">
+                                <h2>Dushera Celebration</h2>
+                            </div>
+
+                            <div class="row schedule-item">
+                                <div class="speaker">
+                                    <img src="/uk_joshi/static/src/img/speakers/1.jpg" alt="Brenden Legros"/>
+                                </div>
+                                <h4>Garba</h4>
+                                <time>05:00 PM</time>
+                            </div>
+
+                            <div class="row schedule-item">
+                                <div class="speaker">
+                                    <img src="/uk_joshi/static/src/img/speakers/2.jpg" alt="Hubert Hirthe"/>
+                                </div>
+                                <h4>Interval &amp; Aarti</h4>
+                                <time>07:00 PM</time>
+                            </div>
+
+                            <div class="row schedule-item">
+                                <div class="speaker">
+                                    <img src="/uk_joshi/static/src/img/speakers/3.jpg" alt="Cole Emmerich"/>
+                                </div>
+                                <h4>Dandiya Raas</h4>
+                                <time>07:15 PM</time>
+                            </div>
+
+                            <div class="row schedule-item">
+                                <div class="speaker">
+                                    <img src="/uk_joshi/static/src/img/fafda.webp" alt="Hubert Hirthe"/>
+                                </div>
+                                <h4>Fafda &amp; Jalebi</h4>
+                                <time>08:15 PM</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--==========================
+              Buy Ticket Section
+            ============================-->
+            <section id="buy-tickets" class="section-with-bg wow fadeInUp">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Buy Tickets</h2>
+                        <p style="color:red;">( Advance Booking Only For 4th - 5th and 13th October 2024 )</p>
+                    </div>
+
+                    <div class="row">
+                        <table class="table table-condensed buy-ticket-table">
+                            <thead>
+                                <tr>
+                                    <td>
+                                        <b>Ticket Type</b>
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <b>Adults ( 12+ )</b>
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <b>Child (5-12)</b>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </thead>
+                            <t t-set="event" t-value="event"/>
+
+                            <tbody>
+                                <tr style="background: #f2e9e9;">
+                                    <td><span>One Memorable Night</span></td>
+                                    <td style="color:#0e1b4d;text-align: center;">
+                                        <b>£8</b>
+                                    </td>
+                                    <td style="color:#0e1b4d;text-align: center;">
+                                        <b>£4</b>
+                                    </td>
+                                    <td>
+                                        <button t-if="event.event_registrations_open" type="button" data-bs-toggle="modal"
+                                            data-bs-target="#modal_ticket_registration"
+                                            t-attf-class="btn btn-primary {{cta_additional_classes}}">Buy Tickets</button>
+    <!--                                    <a href="https://forms.gle/GsRGAniHw1nfLrYo6" target="new" alt="Buy Tickets"-->
+    <!--                                       class="buy-tickets-btn">-->
+    <!--                                        <i class="fa fa-shopping-cart"></i>-->
+    <!--                                        <span class="button-text">Buy Tickets</span>-->
+    <!--                                    </a>-->
+                                    </td>
+                                </tr>
+                                <tr style="background: #f2e9e9;">
+                                    <td><span>Double the Fun ( Any 2 nights )</span></td>
+                                    <td style="color:#0e1b4d;text-align: center;">
+                                        <b>£12</b>
+                                    </td>
+                                    <td style="color:#0e1b4d;text-align: center;">
+                                        <b>£5</b>
+                                    </td>
+                                    <td>
+                                        <button t-if="event.event_registrations_open" type="button" data-bs-toggle="modal"
+                                            data-bs-target="#modal_ticket_registration"
+                                            t-attf-class="btn btn-primary {{cta_additional_classes}}">Buy Tickets</button>
+    <!--                                    <a href="https://forms.gle/GsRGAniHw1nfLrYo6" target="new" alt="Buy Tickets"-->
+    <!--                                       class="buy-tickets-btn">-->
+    <!--                                        <i class="fa fa-shopping-cart"></i>-->
+    <!--                                        <span class="button-text">Buy Tickets</span>-->
+    <!--                                    </a>-->
+                                    </td>
+                                </tr>
+                                <tr style="background: #f2e9e9;">
+                                    <td><span>Triple the Joy ( All 3 Nights )</span></td>
+                                    <td style="color:#0e1b4d;text-align: center;">
+                                        <b>£16</b>
+                                    </td>
+                                    <td style="color:#0e1b4d; text-align: center;">
+                                        <b>£6</b>
+                                    </td>
+                                    <td>
+                                        <button t-if="event.event_registrations_open" type="button" data-bs-toggle="modal"
+                                                data-bs-target="#modal_ticket_registration"
+                                                t-attf-class="btn btn-primary {{cta_additional_classes}}">Buy Tickets</button>
+    <!--                                    <a href="https://forms.gle/GsRGAniHw1nfLrYo6" target="new" alt="Buy Tickets"-->
+    <!--                                       class="buy-tickets-btn">-->
+    <!--                                        <i class="fa fa-shopping-cart"></i>-->
+    <!--                                        <span class="button-text">Buy Tickets</span>-->
+    <!--                                    </a>-->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <t t-call="website_event.modal_ticket_registration"/>
+                        <p style="padding:17px; font-size: 22px;color:red;">**Enjoy live catering with South Indian dishes
+                            like idli, dosa, and medu vada, available for purchase at the venue!
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!--==========================
+              Dress Code Section
+            ============================-->
+            <section id="dress" class="section-with-bg">
+                <div class="container wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                    <div class="section-header" style="margin-bottom:0px;">
+                        <h2>Dress code</h2>
+                    </div>
+
+                    <div class="content" style="text-align: center;">
+                        <h4>Women</h4>
+                        <h3>Chaniya choli or saree</h3>
+                        <br/>
+                        <h4>Men</h4>
+                        <h3>Kurta or Kediyu</h3>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!--==========================
+              Venue Section
+            ============================-->
+            <section id="venue" class="wow fadeInUp">
+
+                <div class="container-fluid">
+
+                    <div class="section-header">
+                        <h2>Event Venue</h2>
+                        <p>Event venue location info and gallery</p>
+                    </div>
+
+                    <div class="row no-gutters">
+                        <div class="col-lg-6 venue-map">
+                            <iframe src="https://maps.google.com/maps?q=rugby%20collage&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                                    frameborder="0" style="border:0" allowfullscreen="1"></iframe>
+                        </div>
+
+                        <div class="col-lg-6 venue-info">
+                            <div class="row justify-content-center">
+                                <div class="col-11 col-lg-8">
+                                    <h3>Sports Centre Rugby College</h3>
+                                    <p>Technology Drive, Rugby, CV21 1AR</p>
+                                    <p>**Free Parking Available**</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="container-fluid venue-gallery-container">
+                    <div class="row no-gutters">
+
+                        <div class="col-lg-4 col-md-4">
+                            <div class="venue-gallery">
+                                <a href="/uk_joshi/static/src/img/1.jpg" class="venobox" data-gall="venue-gallery">
+                                    <img src="/uk_joshi/static/src/img/1.jpg" alt="" class="img-fluid"/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4">
+                            <div class="venue-gallery">
+                                <a href="/uk_joshi/static/src/img/2.jpg" class="venobox" data-gall="venue-gallery">
+                                    <img src="/uk_joshi/static/src/img/2.jpg" alt="" class="img-fluid"/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4">
+                            <div class="venue-gallery">
+                                <a href="/uk_joshi/static/src/img/3.jpg" class="venobox" data-gall="venue-gallery">
+                                    <img src="/uk_joshi/static/src/img/3.jpg" alt="" class="img-fluid"/>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="container-fluid">
+                    <div class="row no-gutters">
+                        <div class="col-lg-6 venue-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9742.725379992222!2d-1.271237!3d52.3761978!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487740b5c19a856b%3A0xe3203a1ea09cdf2c!2sRugby%20Indian%20Association!5e0!3m2!1sen!2suk!4v1694973758269!5m2!1sen!2suk"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="col-lg-6 venue-info">
+                            <div class="row justify-content-center">
+                                <div class="col-11 col-lg-8">
+                                    <h3>Rugby Indian Association</h3>
+                                    <p>Edward St, Rugby CV21 2EZ</p>
+                                    <p>**Free Parking Available**</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+
+            <!--==========================
+              Gallery Section
+            ============================-->
+            <section id="gallery" class="wow fadeInUp">
+
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Gallery</h2>
+                        <p>Guria Charitable foundation</p>
+                    </div>
+                </div>
+
+                <div class="owl-carousel gallery-carousel">
+                    <a href="/uk_joshi/static/src/img/gallery/1.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery/1.jpg" alt=""/>
+                    </a>
+                    <a href="/uk_joshi/static/src/img/gallery/2.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery/2.jpg" alt=""/>
+                    </a>
+                    <a href="/uk_joshi/static/src/img/gallery/3.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery/3.jpg" alt=""/>
+                    </a>
+                    <a href="/uk_joshi/static/src/img/gallery/4.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery/4.jpg" alt=""/>
+                    </a>
+                    <a href="/uk_joshi/static/src/img/gallery/5.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery/5.jpg" alt=""/>
+                    </a>
+                    <a href="/uk_joshi/static/src/img/gallery/6.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery/6.jpg" alt=""/>
+                    </a>
+                    <a href="/uk_joshi/static/src/img/gallery/7.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery/7.jpg" alt=""/>
+                    </a>
+                    <a href="/uk_joshi/static/src/img/gallery/8.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery/8.jpg" alt=""/>
+                    </a>
+                </div>
+
+            </section>
+
+            <section id="gallery" class="wow fadeInUp">
+
+                <div class="container">
+                    <div class="section-header">
+                        <h2>NAVARATRI 2022</h2>
+                    </div>
+                </div>
+                <div class="owl-carousel gallery-carousel">
+                    <a href="/uk_joshi/static/src/img/gallery2/1.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery2/1.jpg" alt=""/>
+                    </a>
+                    <a href="/uk_joshi/static/src/img/gallery2/2.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery2/2.jpg" alt=""/>
+                    </a>
+                    <a href="/uk_joshi/static/src/img/gallery2/3.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery2/3.jpg" alt=""/>
+                    </a>
+                    <a href="/uk_joshi/static/src/img/gallery2/4.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery2/4.jpg" alt=""/>
+                    </a>
+                    <a href="/uk_joshi/static/src/img/gallery2/5.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery2/5.jpg" alt=""/>
+                    </a>
+                    <a href="/uk_joshi/static/src/img/gallery2/6.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery2/6.jpg" alt=""/>
+                    </a>
+                    <a href="/uk_joshi/static/src/img/gallery2/7.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery2/7.jpg" alt=""/>
+                    </a>
+                    <a href="/uk_joshi/static/src/img/gallery2/8.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery2/8.jpg" alt=""/>
+                    </a>
+                    <a href="/uk_joshi/static/src/img/gallery2/9.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery2/9.jpg" alt=""/>
+                    </a>
+                    <a href="/uk_joshi/static/src/img/gallery2/10.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery2/10.jpg" alt=""/>
+                    </a>
+                    <a href="/uk_joshi/static/src/img/gallery2/11.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery2/11.jpg" alt=""/>
+                    </a>
+                    <a href="/uk_joshi/static/src/img/gallery2/12.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery2/12.jpg" alt=""/>
+                    </a>
+                    <a href="/uk_joshi/static/src/img/gallery2/13.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery2/13.jpg" alt=""/>
+                    </a>
+                </div>
+            </section>
+            <section id="gallery" class="wow fadeInUp">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>NAVARATRI 2023</h2>
+                    </div>
+                </div>
+                <div class="owl-carousel gallery-carousel">
+                    <a href="/uk_joshi/static/src/img/gallery3/1.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery3/1.jpg" alt=""/>
+                    </a>
+                    <a href="/uk_joshi/static/src/img/gallery3/2.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery3/2.jpg" alt=""/>
+                    </a>
+                    <a href="/uk_joshi/static/src/img/gallery3/3.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery3/3.jpg" alt=""/>
+                    </a>
+                    <a href="/uk_joshi/static/src/img/gallery3/4.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery3/4.jpg" alt=""/>
+                    </a>
+                    <a href="/uk_joshi/static/src/img/gallery3/5.jpg" class="venobox" data-gall="gallery-carousel">
+                        <img src="/uk_joshi/static/src/img/gallery3/5.jpg" alt=""/>
+                    </a>
+                </div>
+            </section>
+
+            <!--==========================
+              Speakers Section
+            ============================-->
+            <section id="thought" class="wow fadeInUp">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>
+                                Our final thought...
+                            </p>
+                            <p>
+                                This Navratri, let's come together to celebrate the joyous rhythms of Garba in the presence of Maa Ambe. As
+                                we unite in merriment,
+                                we also take a meaningful step closer to supporting children and families, working towards a brighter future
+                                in India.
+                            </p>
+                            <p>
+                                We eagerly anticipate your presence at Navli Navratri Nights, where we can create lasting memories and
+                                contribute to important causes.
+                            </p>
+                            <h2>
+                                Aeee Halo Halo......
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==========================
+              Sponsors Section
+            ============================-->
+            <section id="supporters" class="section-with-bg wow fadeInUp">
+
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Sponsors</h2>
+                    </div>
+
+                    <div class="row no-gutters supporters-wrap clearfix">
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="supporter-logo">
+                                <a href="http://www.joshiaccountants.co.uk/" target="new">
+                                    <img src="/uk_joshi/static/src/img/supporters/1.png" class="img-fluid" alt="joshiaccountants"/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="supporter-logo">
+                                <a href="https://freedomcircle.co.uk/" target="new">
+                                    <img src="/uk_joshi/static/src/img/supporters/2.png" class="img-fluid" alt="woodstreet"/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="supporter-logo">
+                                <a href="https://www.woodstreetautocentre.co.uk/" target="new">
+                                    <img src="/uk_joshi/static/src/img/supporters/10.png" class="img-fluid" alt="abbeymotorservices"/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="supporter-logo">
+                                <a href="https://www.facebook.com/arihantfoodsrugby/" target="new">
+                                    <img src="/uk_joshi/static/src/img/supporters/5.png" class="img-fluid" alt="Arihant"/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="supporter-logo">
+                                <a href="https://www.lakshmistores.com/?gclid=CjwKCAjw6raYBhB7EiwABge5KlyG11ik0f-o_8625y-OAsOEEnBNwS9pFsEMfc7tiDj9ZCh6aHCfMRoCl2UQAvD_BwE"
+                                   target="new">
+                                    <img src="/uk_joshi/static/src/img/supporters/6.png" class="img-fluid" width="190px" alt="Laxmi Store"/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="supporter-logo">
+                                <a href="https://wbrgroup.co.uk" target="new">
+                                    <img src="/uk_joshi/static/src/img/supporters/7.png" class="img-fluid" alt="WBR Group"/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="supporter-logo">
+                                <a href="https://heliosxenergy.co.uk" target="new">
+                                    <img src="/uk_joshi/static/src/img/supporters/8.png" class="img-fluid" alt="HELIOS X ENERGY"/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="supporter-logo">
+                                <a href="https://lakhtech.com" target="new">
+                                    <img src="/uk_joshi/static/src/img/supporters/9.png" class="img-fluid" alt="LakhTech"/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="supporter-logo">
+                                <a href="#intro" target="new">
+                                    <img src="/uk_joshi/static/src/img/supporters/11.png" class="img-fluid" width="190px" alt="sukhi construction"/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="supporter-logo">
+                                <a href="https://annaiexpresscoventry.co.uk/?utm_source=GMBwebsite&amp;utm_medium=organic&amp;utm_campaign=Google%20My%20Business"
+                                   target="new">
+                                    <img src="/uk_joshi/static/src/img/supporters/12.png" class="img-fluid" alt="annai express"/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="supporter-logo">
+                                <a href="#intro" target="new">
+                                    <img src="/uk_joshi/static/src/img/supporters/13.png" class="img-fluid" alt="Attire Aangan"/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="supporter-logo">
+                                <a href="#intro" target="new">
+                                    <img src="/uk_joshi/static/src/img/supporters/14.png" class="img-fluid" alt="Komal"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!--==========================
+              Ankita Section
+            ============================-->
+
+            <section id="attire" class="section-bg wow fadeInUp">
+                <div class="container">
+                    <div class="section-header-komal attire-section">
+                        <h2>WELCOME TO ATTIRE AANGAN</h2>
+                        <h4>Embrace Elegance</h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="/uk_joshi/static/src/img/attire.png" class="attire-logo" alt="Attire Aangan"/>
+                        </div>
+                        <div class="col-lg-8 attire-aangan">
+
+                            At Attire Angan, we offer a beautiful range of Indian clothing and accessories.
+                            <br/>
+                            <strong>Discover our collection:</strong>
+                            <br/>
+                            <ul>
+                                <li>
+                                    <strong>Ladies Dresses:</strong>
+                                    Chic and stylish for any occasion. 👗
+                                </li>
+                                <li>
+                                    <strong>Chaniya Choli:</strong>
+                                    Vibrant and traditional for festivals and celebrations. 🎉
+                                </li>
+                                <li>
+                                    <strong>Kurtis:</strong>
+                                    Comfortable and fashionable for everyday wear. 👚
+                                </li>
+                                <li>
+                                    <strong>Sarees:</strong>
+                                    Classic and elegant for those special moments. 🌟
+                                </li>
+                                <li>
+                                    <strong>Artificial Jewelry:</strong>
+                                    Gorgeous pieces to complete your look. 💍
+                                </li>
+                            </ul>
+                            <strong>Why Choose Us?</strong>
+                            <br/>
+                            <ul>
+                                <li>
+                                    <strong>Quality:</strong>
+                                    Beautifully crafted and made to last. 🛠️
+                                </li>
+                                <li>
+                                    <strong>Style:</strong>
+                                    A blend of tradition and modern elegance. 💫
+                                </li>
+                                <li>
+                                    <strong>Affordability:</strong>
+                                    Luxurious designs at great prices. 💸
+                                </li>
+                            </ul>
+
+                            Shop with us online or visit our store to find your perfect outfit.<br/>For queries, contact:
+                            <a href="https://wa.me/+447593590424">
+                                <strong>Ankita Thummar : +44 759 359 0424</strong>
+                            </a>
+                            <br/>
+                            Stay updated with the latest news and offers! Join our WhatsApp group by clicking the link below.
+                            <br/>
+                            <br/>
+                            <p class="whatsapp-attire">
+                                <i style="font-size:24px" class="fa">&#xf232;</i>
+                                <a href="https://chat.whatsapp.com/JRuZKdQtSgBCg9ARgDkxha">ATTIRE AANGAN COLLECTION</a>
+                                |
+                                <a href="https://chat.whatsapp.com/KR8tLJohcS91cafCuc4HlG">KIDS COLLECTION</a>
+                                |
+                                <a href="https://chat.whatsapp.com/EmdRCOINPAIFacDYxYEKIg">NAVRATRI COLLECTION</a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==========================
+              Komal Section
+            ============================-->
+            <section id="komal" class="section-with-bg wow fadeInUp">
+
+                <div class="container komal-section">
+                    <div class="section-header-komal ">
+                        <h2>KOMAL'S BEAUTY SALOON</h2>
+                        <h4>🌟💄 Where Beauty Begins at Home! 💄🌟</h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="/uk_joshi/static/src/img/komal.png" class="komal-logo" alt="komal's"/>
+                        </div>
+                        <div class="col-lg-8 komal-details">
+                            Step into my cozy space where your beauty needs are met with a personal touch. From rejuvenating facials to
+                            stylish nail art, elegant mehndi designs, and luxurious manicures and pedicures, I’ve got you covered!
+                            💆‍♀️💅
+                            <br/>
+                            <br/>
+                            <ul>
+                                <li><strong>Facials:</strong>Revitalize your skin with treatments that leave you glowing. ✨
+                                </li>
+                                <li>
+                                    <strong>Nail Art:</strong>
+                                    Showcase your style with unique and creative designs. 🎨
+                                </li>
+                                <li>
+                                    <strong>Mehndi:</strong>
+                                    Add a touch of elegance to your special occasions with intricate designs. 🌿
+                                </li>
+                                <li>
+                                    <strong>Manicure &amp; Pedicure:</strong>
+                                    Pamper your hands and feet with our luxurious care. 🌸
+                                </li>
+                                <li>
+                                    <strong>Waxing:</strong>
+                                    Enjoy silky smooth legs and hands with our professional waxing services. 🌷
+                                </li>
+                                <li>
+                                    <strong>Eyebrows &amp; Upper Lips:</strong>
+                                    Perfectly groomed eyebrows and a flawless upper lip for a polished look. 🌟
+                                </li>
+                            </ul>
+                            My goal is to enhance your beauty and create an experience that leaves you feeling confident and refreshed.
+                            I can’t wait to welcome you to Komal’s Beauty Saloon for a treatment that’s all about YOU! 💖
+                            <br/>
+                            <br/>
+                            Feel free to reach out anytime to book your appointment or ask any questions. Let’s embark on this beautiful
+                            journey together! 🌼🏡💄
+                            <p class="whatsapp-attire-komal">
+                                <a href="https://wa.me/+447824807191">
+                                    <strong>
+                                        <i style="font-size:24px" class="fa">&#xf232;</i>
+                                        Komal Gedia : +447824807191
+                                    </strong>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--==========================
+              Contact Section
+            ============================-->
+            <section id="contact" class="section-bg wow fadeInUp">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Organisers</h2>
+                    </div>
+                    <div class="row contact-info">
+                        <div class="col-md-3">
+                            <div class="">
+                                <i class="ion-ios-telephone-outline"></i>
+                                <h3>Pallavi Joshi</h3>
+                                <p>
+                                    <a href="https://wa.me/+447838480424?text=I%27m%20interested%20in%20booking%20tickets%20for%20the%20Navali%20Navratri%20Night%20event%20in%20Rugby.%20My%20booking%20details%20are%20as%20follows%3A%0A%0AName%3A%0ANumber%20of%20Adults%20(12%2B)%3A%0ANumber%20of%20Children%20(5-12%20yrs)%3A%0ANumber%20of%20Nights%20(20th%20October%20%2F%2021st%20October%20%2F%2028th%20October%202023)%20(One%20Memorable%20Night%20-%20Only%20%C2%A37%20%2F%20Double%20the%20Fun%20(2%20nights)%20-%20Just%20%C2%A311%20%2F%20Triple%20the%20Joy%20(3%20nights)%20-%20A%20steal%20at%20%C2%A315)%3A%0A%0AThanks%21">
+                                        +44 7838480424
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="contact-phone">
+                                <i class="ion-ios-telephone-outline"></i>
+                                <h3>Kirit Joshi</h3>
+                                <p>
+                                    <a href="https://wa.me/+447930898864?text=I%27m%20interested%20in%20booking%20tickets%20for%20the%20Navali%20Navratri%20Night%20event%20in%20Rugby.%20My%20booking%20details%20are%20as%20follows%3A%0A%0AName%3A%0ANumber%20of%20Adults%20(12%2B)%3A%0ANumber%20of%20Children%20(5-12%20yrs)%3A%0ANumber%20of%20Nights%20(20th%20October%20%2F%2021st%20October%20%2F%2028th%20October%202023)%20(One%20Memorable%20Night%20-%20Only%20%C2%A37%20%2F%20Double%20the%20Fun%20(2%20nights)%20-%20Just%20%C2%A311%20%2F%20Triple%20the%20Joy%20(3%20nights)%20-%20A%20steal%20at%20%C2%A315)%3A%0A%0AThanks%21">
+                                        +44 79308 98864
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="contact-phone" style="border-left: 0px;">
+                                <i class="ion-ios-telephone-outline"></i>
+                                <h3>Parixit Vaghasiya</h3>
+                                <p>
+                                    <a href="https://wa.me/448795219879/?text=I%27m%20interested%20in%20booking%20tickets%20for%20the%20Navali%20Navratri%20Night%20event%20in%20Rugby.%20My%20booking%20details%20are%20as%20follows%3A%0A%0AName%3A%0ANumber%20of%20Adults%20(12%2B)%3A%0ANumber%20of%20Children%20(5-12%20yrs)%3A%0ANumber%20of%20Nights%20(20th%20October%20%2F%2021st%20October%20%2F%2028th%20October%202023)%20(One%20Memorable%20Night%20-%20Only%20%C2%A37%20%2F%20Double%20the%20Fun%20(2%20nights)%20-%20Just%20%C2%A311%20%2F%20Triple%20the%20Joy%20(3%20nights)%20-%20A%20steal%20at%20%C2%A315)%3A%0A%0AThanks%21">
+                                        +44 87952 19879
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="">
+                                <i class="ion-ios-telephone-outline"></i>
+                                <h3>Pratik Gedia</h3>
+                                <p>
+                                    <a href="https://wa.me/447824806914/?text=I%27m%20interested%20in%20booking%20tickets%20for%20the%20Navali%20Navratri%20Night%20event%20in%20Rugby.%20My%20booking%20details%20are%20as%20follows%3A%0A%0AName%3A%0ANumber%20of%20Adults%20(12%2B)%3A%0ANumber%20of%20Children%20(5-12%20yrs)%3A%0ANumber%20of%20Nights%20(20th%20October%20%2F%2021st%20October%20%2F%2028th%20October%202023)%20(One%20Memorable%20Night%20-%20Only%20%C2%A37%20%2F%20Double%20the%20Fun%20(2%20nights)%20-%20Just%20%C2%A311%20%2F%20Triple%20the%20Joy%20(3%20nights)%20-%20A%20steal%20at%20%C2%A315)%3A%0A%0AThanks%21">
+                                        +44 78248 06914
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section><!-- #contact -->
+        </main>
+    </template>
+
+
+    <template id="joshi_website_footer" inherit_id="website.footer_custom" name="Footer">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer">
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-lg-4 col-md-6 footer-links">
+                                <h4>Useful Links</h4>
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-angle-right"></i>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-angle-right"></i>
+                                        <a href="#about">About</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-angle-right"></i>
+                                        <a href="#speakers">Charity</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-angle-right"></i>
+                                        <a href="#dress">Dress Code</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-angle-right"></i>
+                                        <a href="#buy-tickets">Buy Tickets</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-angle-right"></i>
+                                        <a href="#thought">Our thought</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-8 col-md-6 footer-contact">
+                                <h4>Disclaimer</h4>
+                                <p>
+                                    During the Navratri event, our team will be capturing photos and videos to document the
+                                    celebration and create memorable moments.
+                                    If you have any objections or concerns regarding being photographed or filmed, or if you
+                                    wish to avoid being included in our event materials,
+                                    please inform us in advance. We highly value your comfort and will make every effort to
+                                    accommodate your preferences, ensuring a pleasant and enjoyable
+                                    experience for all attendees.
+
+                                    Your privacy and comfort are important to us, and we appreciate your cooperation in
+                                    helping us make the event a positive and inclusive
+                                    experience for everyone.
+                                </p>
+                                <p>
+                                    Please note this is a non-profitable event, all the funds collected will be donated to
+                                    Guria charitable foundation in India.
+                                    Funds collected will be used to meet the needs of children supported by the charity.
+                                    Guria is a non-profitable organisation found by
+                                    Mr Ajeet Singh and Mrs Manju Singh. The organisation is dedicated to fighting against
+                                    child prostitution, second generation prostitution
+                                    and sex trafficking in Northern India, and to achieve freedom worldwide. Further
+                                    information can be found on, www.guriaindia.org.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+                    <!-- JavaScript Libraries -->
+            <script src="/uk_joshi/static/src/lib/jquery/jquery.min.js"></script>
+            <script src="/uk_joshi/static/src/lib/jquery/jquery-migrate.min.js"></script>
+            <script src="/uk_joshi/static/src/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="/uk_joshi/static/src/lib/easing/easing.min.js"></script>
+            <script src="/uk_joshi/static/src/lib/superfish/hoverIntent.js"></script>
+            <script src="/uk_joshi/static/src/lib/superfish/superfish.min.js"></script>
+            <script src="/uk_joshi/static/src/lib/wow/wow.min.js"></script>
+            <script src="/uk_joshi/static/src/lib/venobox/venobox.min.js"></script>
+            <script src="/uk_joshi/static/src/lib/owlcarousel/owl.carousel.min.js"></script>
+
+                    <!-- Contact Form JavaScript File -->
+                    <!-- <script src="contactform/contactform.js"></script> -->
+
+                    <!-- Template Main Javascript File -->
+            <script src="/uk_joshi/static/src/js/main.js"></script>
+        </xpath>
+    </template>
+
+</odoo>
